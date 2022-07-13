@@ -5,7 +5,7 @@
 
 <div class="card my-4 border-primary">
     <h4 class="card-header border-primary">{{question.question}}?</h4>
-    <form methon="post"> action="{%url 'submit_answer' categoey.id question.id%}">
+    <form methon="post" action="{%url 'submit_answer' category.id question.id%}">
         {% csrf_token %}
     <div class="card-body">
         <table class="table table-boardered">
